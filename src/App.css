@@ -1,0 +1,83 @@
+/*===================== App.js =====================*/
+
+.App {
+  width: 1200px;
+  margin: 20px;
+}
+
+.App-header {
+  height: 100px;
+  padding: 20px;
+  padding-left: 100px;
+  padding-right: 40px;
+  background-color:  #00BCD4;
+  color: white;
+  display: flex;
+}
+
+.App-User{
+  padding: 20px;
+  flex: 3;
+  text-align: right;
+}
+
+.App-addPost{
+  text-align: center;
+}
+
+/*===================== Post.js =====================*/
+
+.Post{
+  display:flex;
+  margin: 5% 2% 0% 21.5%;
+  padding: 20px;
+  width: 50%;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  border: solid 1px rgba(51,51,51,0.12);
+  background-color: rgba(248, 248, 248, 0.5);
+}
+
+.Post-header{
+  width:100%;
+  border-bottom: solid 0.5px rgba(51,51,51,0.12);
+  color: gray;
+}
+
+.Post-time, .Comment-time{
+  font-size: 85%;
+}
+
+.Post-content, .Comment-content{
+  padding: 10px;
+  width: 100%;
+  word-wrap: break-word;
+}
+
+.Post-addComment-input{
+  display: flex;
+  width: 45%;
+  margin-right: 29.5%;
+  font-size: 100%;
+}
+
+/*===================== Comment.js =====================*/
+
+.Comment{
+  display:flex;
+  margin-left: 27.5%;
+  padding: 20px;
+  width: 43%;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  border: solid 1px rgba(51,51,51,0.12);
+  background-color: rgba(248, 248, 248, 0.5);
+}
+
+.Comment-header{
+  width:100%;
+  border-bottom: solid 0.5px rgba(51,51,51,0.12);
+  color: gray;
+}
