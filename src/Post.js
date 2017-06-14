@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import 'babel-polyfill';
 import fetch from 'isomorphic-fetch';
 import { Link } from 'react-router-dom';
-import ReactHtmlParser from 'react-html-parser';
 
 class Post extends Component {
   constructor(props) {
@@ -21,13 +20,11 @@ class Post extends Component {
   render() {
     const pid = this.props.match.params.post_id;
     const data = this.state.data;
-    console.log(data);
-    // const content = ReactHtmlParser(data.content.replace(/\r?\n/g, '<br />'));
     return (
       <div id={pid} className="Post">
-        <div className="title">{data.title}</div>
-        <div className="time">{data.time}</div>
-        <div className="content">{data.content}</div>
+        <div className="Post-title"><h2>{data.title}</h2></div>
+        <div className="Post-time">{data.time}</div>
+        <div className="Post-content">{data.content}</div>
       </div>
     );
   }

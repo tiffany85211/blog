@@ -51,10 +51,12 @@
 }
 
 .Blog-Post {
+  word-break: break-all;
   width: 50%;
   display: flex;
   margin: 10px;
   padding: 20px;
+  justify-content: center;
   align-content: flex-start;
   flex-wrap: wrap;
   border: solid 1px rgba(51,51,51,0.12);
@@ -83,3 +85,25 @@
 }
 
 /*===================== Post.js =====================*/
+
+.Post {
+  margin: 0% 0% 10% 10%;
+  justify-content: center;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  word-break: break-all;
+}
+
+.Post-title {
+  border-bottom: thick solid #00BCD4;
+  width: 60%;
+}
+
+.Post-time {
+  margin-top: 10px;
+  color: gray;
+}
+
+.Post-content {
+  margin-top: 50px;
+}
