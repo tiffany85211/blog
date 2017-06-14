@@ -5,20 +5,20 @@ import { Link } from 'react-router-dom';
 class Blog extends Component {
   constructor() {
     super();
-    this.state = { postLists: [] };
+    this.state = { data: [] };
   }
 
   componentWillMount() {
     fetch('/api/posts')
       .then(res => res.json())
-      .then(postLists => this.setState({ postLists }))
+      .then(data => this.setState({ data }))
       .catch(err => console.log(err));
     console.log(process.env.NODE_ENV);
     console.log(`MONGODB_URI = ${process.env.MONGODB_URI}`);
   }
 
   render() {
-    const posts = this.state.postLists;
+    const posts = this.state.data;
     return (
       <div className="Blog-postLists">
         <ul>

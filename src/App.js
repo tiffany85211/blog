@@ -6,6 +6,7 @@ import FloatingActionButton from 'material-ui/FloatingActionButton';
 import ContentAdd from 'material-ui/svg-icons/content/add';
 import AddPost from './AddPost';
 import Blog from './Blog';
+import Post from './Post';
 import './App.css';
 
 injectTapEventPlugin();
@@ -32,6 +33,7 @@ const App = () => (
       <Switch>
         <Route exact path="/" component={Blog} />
         <Route path="/addpost" component={AddPost} />
+        <Route path="/post/:post_id" component={Post} />
       </Switch>
     </div>
   </BrowserRouter>

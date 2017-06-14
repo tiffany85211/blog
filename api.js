@@ -39,7 +39,7 @@ router.get('/posts', (req, res) => {
 
 router.get('/post/:post_id', (req, res) => {
   const id = req.params.post_id;
-  Blog.findById(id, (err, post) => {
+  Blog.findById((id), (err, post) => {
     if (err) return console.log(err);
     res.json(post);
     return console.log(`getPost ${id}: ${post}`);
