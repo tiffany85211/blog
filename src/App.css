@@ -5,79 +5,81 @@
   margin: 20px;
 }
 
+.App-home a{
+  color:#00BCD4;
+  text-decoration-line: none;
+}
+
 .App-header {
   height: 100px;
   padding: 20px;
   padding-left: 100px;
   padding-right: 40px;
-  background-color:  #00BCD4;
-  color: white;
+  color: #00BCD4;
   display: flex;
 }
 
-.App-User{
+.App-addPost {
   padding: 20px;
   flex: 3;
   text-align: right;
 }
 
-.App-addPost{
+/*===================== AddPost.js =====================*/
+
+.Add-title {
+  text-align: left;
+  padding-left: 10%;
+}
+
+.Add-content {
   text-align: center;
 }
 
-/*===================== Post.js =====================*/
-
-.Post{
-  display:flex;
-  margin: 5% 2% 0% 21.5%;
-  padding: 20px;
-  width: 50%;
-  justify-content: center;
-  align-content: flex-start;
-  flex-wrap: wrap;
-  border: solid 1px rgba(51,51,51,0.12);
-  background-color: rgba(248, 248, 248, 0.5);
+.Add-publish {
+  text-align: right;
+  padding-right: 10%;
 }
 
-.Post-header{
-  width:100%;
-  border-bottom: solid 0.5px rgba(51,51,51,0.12);
-  color: gray;
-}
+/*===================== Blog.js =====================*/
 
-.Post-time, .Comment-time{
-  font-size: 85%;
-}
-
-.Post-content, .Comment-content{
-  padding: 10px;
+.Blog-postLists {
+  margin-left: 40px;
+  display: inline-block;
+  text-align: left;
   width: 100%;
-  word-wrap: break-word;
 }
 
-.Post-addComment-input{
+.Blog-Post {
+  width: 50%;
   display: flex;
-  width: 45%;
-  margin-right: 29.5%;
-  font-size: 100%;
-}
-
-/*===================== Comment.js =====================*/
-
-.Comment{
-  display:flex;
-  margin-left: 27.5%;
+  margin: 10px;
   padding: 20px;
-  width: 43%;
-  justify-content: center;
   align-content: flex-start;
   flex-wrap: wrap;
   border: solid 1px rgba(51,51,51,0.12);
   background-color: rgba(248, 248, 248, 0.5);
 }
 
-.Comment-header{
-  width:100%;
-  border-bottom: solid 0.5px rgba(51,51,51,0.12);
-  color: gray;
+.Blog-postLists a{
+  color:black;
+  text-decoration-line: none;
 }
+
+.Blog-Post-title {
+  margin-top: 2%;
+  font-size: 150%;
+  font-weight: bold;
+  flex: 3;
+  text-align: left;
+}
+
+.Blog-Post-time {
+  color: gray;
+  flex: 1;
+  text-align: right;
+  font-size: 80%;
+  margin: 5% 0% 0% 0%;
+}
+
+/*===================== Post.js =====================*/
