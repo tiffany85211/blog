@@ -46,19 +46,19 @@ router.get('/post/:post_id', (req, res) => {
   });
 });
 
-router.post('/post', (req) => {
+router.post('/post', (req, res) => {
   const newpost = new Blog(req.body);
   newpost.save((err) => {
     if (err) return console.log(err);
-    return console.log('api POST post success');
+    return res.send({ state: "api POST post success"});
   });
 });
 
-router.put('/post/:post_id', (req) => {
-  const id = req.params.post_id;
-  Blog.findByIdAndUpdate(id, req.body)
-      .catch(err => console.log(err));
-  console.log('api PUT post success');
-});
+// router.put('/post/:post_id', (req, res) => {
+//   const id = req.params.post_id;
+//   Blog.findByIdAndUpdate(id, req.body)
+//       .catch(err => console.log(err));
+//   console.log('api PUT post success');
+// });
 
 module.exports = router;
